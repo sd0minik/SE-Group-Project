@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="donation.css" />
+    <link rel="shortcut icon" href="DH.png" type="image/x-icon" />
+
+    <title>Donate Here</title>
+  </head>
+  <body>
+    <div class="donatebar" id="donatebar">
+      <div class="logo2">
+        <h1><span>For</span> Donation</h1>
+      </div>
+      <div class="menu2" id="menu2">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About US</a></li>
+        </ul>
+      </div>
+      <div class="menuicon2">
+        <i
+          id="menuicon"
+          onclick="togglemenu()"
+          class="fas fa-chevron-circle-down"
+        >
+          <span>MENU</span></i
+        >
+      </div>
+    </div>
+    <div class="cupo">
+      <div class="mika">
+        <br />
+        <h3>Extend Your</h3>
+        <h2><span>Support to our organization Program.</span></h2>
+        <h3>
+          ....Served more than 200 Thousand meals in Kathmandu since 2024....
+        </h3>
+        <br />
+        <br />
+        <p>
+          We are here to compassion meets action to alleviate hunger and foster
+          community solidarity. At our platform, we believe in the power of
+          generosity to transform lives and uplift communities. Through our
+          simple and intuitive interface, we connect donors with surplus food to
+          those in need, creating a seamless and impactful channel for food
+          redistribution. Whether you're a restaurant with excess inventory, a
+          grocery store with unsold produce, or an individual with a desire to
+          make a difference, our platform provides the means to channel your
+          generosity effectively. Together, we can combat food insecurity,
+          reduce food waste, and build a more resilient and compassionate
+          society. Join us in the fight against hunger, one donation at a time.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Donor Details</h3>
+
+            <div class="inputBox">
+              <span>Full name :</span>
+              <input type="text" placeholder="Your Name" />
+            </div>
+            <div class="inputBox">
+              <span>Email :</span>
+              <input type="email" placeholder="example@example.com" />
+            </div>
+            <div class="inputBox">
+              <span>Address :</span>
+              <input type="text" placeholder="Your Address" />
+            </div>
+            <div class="inputBox">
+              <span>City :</span>
+              <input type="text" placeholder="Kathmandu" />
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>Province :</span>
+                <input type="text" placeholder="Province Name" />
+              </div>
+              <div class="inputBox">
+                <span>Zip code :</span>
+                <input type="text" placeholder="12345" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">Online Donation</h3>
+
+            <div class="inputBox">
+              <span>Donation Accepted through :</span>
+              <a id="home" href="https://esewa.com.np/#/home" target="_blank"
+                ><img src="/Esewa.jpg" alt=""
+              /></a>
+              <img src="/Khalti.jpg" alt="" />
+              <img src="/IME.jpg" alt="" />
+              <img src="/Bank.png" alt="" />
+            </div>
+            <div class="inputBox">
+              <span>Account Name :</span>
+              <input type="text" placeholder="Mr.Name Surname" />
+            </div>
+            <div class="inputBox">
+              <span>Account Number :</span>
+              <input type="number" placeholder="1111-2222-3333-4444" />
+            </div>
+            <div class="inputBox">
+              <span>Donation month :</span>
+              <input type="text" placeholder="January" />
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>donation year :</span>
+                <input type="number" placeholder="2024" />
+              </div>
+              <div class="inputBox">
+                <span>Pin Number :</span>
+                <input type="text" placeholder="123456" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <input type="submit" value="proceed to checkout" class="submit-btn" />
+      </form>
+    </div>
+    <script>
+      // drop down menu script
+      var menu = document.getElementById("menu");
+      menu.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menu.style.maxHeight == "0px") {
+          menu.style.maxHeight = "390px";
+        } else {
+          menu.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
